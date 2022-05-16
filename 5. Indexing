@@ -1,0 +1,5 @@
+color_list = ["Red","Green","Yellow","Pink","Black"]
+first_color = color_list[0]
+last_color = color_list[-1]
+print("The first color is ",first_color)
+print("The last color is ",last_color)
