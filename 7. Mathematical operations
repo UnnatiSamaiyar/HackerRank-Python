@@ -1,0 +1,10 @@
+first_number = float(input("Enter the first number: "))
+second_number = float(input("Enter the second number: "))
+sum_of_two_numbers = first_number + second_number
+difference_of_two_numbers = first_number - second_number
+multiplication_of_two_numbers = first_number * second_number
+division_of_two_numbers = first_number/second_number
+print("Sum ",sum_of_two_numbers)
+print("Difference ",difference_of_two_numbers)
+print("Product ",multiplication_of_two_numbers)
+print("Division ",division_of_two_numbers)
