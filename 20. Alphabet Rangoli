@@ -1,0 +1,22 @@
+def print_rangoli(size):
+    # your code goes here
+    import string
+    lower_char = string.ascii_lowercase
+    # print upper part
+    line = lower_char[size-1]
+    rgl_size = 4*size - 3
+    print(line.center(rgl_size,"-"))
+    for i in range(size-2,-1,-1):
+        prnt_line = line + "-" + lower_char[i] + "-" + line[::-1]
+        line = line +"-"+ lower_char[i]
+        print(prnt_line.center(rgl_size,"-"))
+    # print lower part
+    line = line[:-2]
+    for i in range(1,size):
+        line = line[:-2]
+        prnt_line = line + "-" + lower_char[i] + "-" + line[::-1]
+        print(prnt_line.center(rgl_size,"-"))
+
+if __name__ == '__main__':
+    n = int(input())
+    print_rangoli(n)
