@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n,m = map(int, input().split())
+a = list(map(int, input().split()))
+A = set(list(map(int, input().split())))
+B = set(list(map(int, input().split())))
+H = 0
+
+for i in a:
+    if i in A:
+        H = H+1
+    elif i in B:
+        H = H-1
+print(H)
