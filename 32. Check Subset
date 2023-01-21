@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+T = int(input())
+for i in range(T):
+    a = int(input())
+    A = set(list(map(int, input().split())))
+    b = int(input())
+    B = set(list(map(int, input().split())))
+
+    print(A.issubset(B))
